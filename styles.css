@@ -115,3 +115,54 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Переключаем на вертикальное выравнивание */
+        align-items: flex-start; /* Выравниваем элементы по началу */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        gap: 0.5rem; /* Уменьшаем отступы между элементами */
+    }
+
+    .section {
+        height: auto; /* Автоматическая высота для секций */
+        padding: 1rem; /* Уменьшаем отступы */
+    }
+
+    .section .content {
+        padding: 1rem; /* Уменьшаем отступы внутри контента */
+    }
+
+    .feature-list, .pricing-plans {
+        flex-direction: column; /* Вертикальное выравнивание */
+        gap: 1rem; /* Уменьшаем отступы между элементами */
+    }
+
+    .plan {
+        width: 100%; /* Ширина плана 100% для мобильных */
+        padding: 1rem; /* Уменьшаем отступы внутри плана */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.2rem; /* Уменьшаем размер логотипа */
+    }
+
+    .btn {
+        padding: 0.5rem; /* Уменьшаем отступы кнопки */
+        font-size: 0.9rem; /* Уменьшаем размер шрифта кнопки */
+    }
+
+    .section h1, .section h2 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовков */
+    }
+
+    .section p {
+        font-size: 0.9rem; /* Уменьшаем размер текста */
+    }
+}
